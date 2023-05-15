@@ -1,0 +1,30 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+table{
+	border-collapse:collapse;
+}
+table,tr,td,tr,th{
+	border:3px solid black;
+}
+th{
+	background:gray;
+}
+td,th{
+	padding:5px;
+}
+body{
+	background-image:url("1.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	padding:20px;
+}
+div{
+	border:2px solid red;
+	margin-bottom:5px;
+	padding:20px;
+}
+
+

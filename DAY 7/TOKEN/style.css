@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    background: url(../8.png),url(../7.png),url(../2.jpg);
+    background-repeat: no-repeat no-repeat ;
+    background-position: right top,left bottom; 
+    background-size: 100px,200px,auto;
+    
+}

@@ -1,0 +1,16 @@
+div{
+    background-image: url('2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 500px;
+    animation: division 4s infinite;
+}
+
+@keyframes division {
+    0%{background-image: url('2.jpg');}
+    25%{background-image: url('3.jpg');}
+    50%{background-image: url('4.jpg');}
+    75%{background-image: url('5.jpg');}
+    100%{background-image: url('1.jpg');}
+}

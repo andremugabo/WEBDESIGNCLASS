@@ -1,0 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("2.jpg") no-repeat center fixed cover,url("6'.jpg") right top;
+    background-size: cover;
+}

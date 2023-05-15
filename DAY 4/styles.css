@@ -1,0 +1,45 @@
+.borders{
+    padding:20px;
+    margin: 4px;
+    border:2px solid black;
+    }
+.colors{
+    background-color: blue;
+    color:white;
+
+
+}
+#images{
+    border-radius:50px;
+    width: 200px;
+    height: 300px;
+}
+#myHeader, #myHeader1{
+    background-color: tomato;
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 4px;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    
+}
+    table{
+        border-collapse:collapse;
+    }
+    table,tr,td,tr,th{
+        border:3px solid black;
+    }
+    th{
+        background:gray;
+    }
+    td,th{
+        padding:5px;
+    }

@@ -1,0 +1,10 @@
+.border{
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+    padding: 2px;
+
+}
+
+ol{
+    list-style-type: upper-roman;
+}

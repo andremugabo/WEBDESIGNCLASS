@@ -1,0 +1,405 @@
+/* ----- Google Fonts -----*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+/* ----- Variables  CSS-----*/
+:root {
+	--header-height: 3rem;
+
+	/* ----- Fonts Weight -----*/
+	--font-medium: 500;
+	--font-semi-bold: 600;
+	--font-bold: 700;
+
+	/* ----- Colors -----*/
+	--primary: #10c98f;
+	--secondary: #03422a;
+	--dark-color: #141414;
+	--dark-color-light: #8a8a8a;
+	--dark-color-lighten: #f2f2f2;
+	--white-color: #fff;
+	--dark-blue: #003458;
+	--text-dark: #555;
+	--dark-yellow: #ffaa33;
+	--green-theme: #00a205;
+	/* ----- Fonts & Typography -----*/
+	--body-font: "DM Sans", sans-serif;
+	--body-font-b: "Bodoni Moda", sans-serif;
+	--big-font-size: 1.25rem;
+	--bigger-font-size: 1.5rem;
+	--biggest-font-size: 2rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: 0.938rem;
+	--smaller-font-size: 0.813rem;
+
+	/* ----- Margins -----*/
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+
+	/* ----- Z-Index -----*/
+	--z-fixed: 100;
+
+	/* ----- Rotate Img -----*/
+	--rotate-img: rotate(-30deg);
+}
+
+/* ----- Base -----*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* --- Variable Dark Theme -- */
+body.dark-theme {
+	--dark-color: #f1f3f2;
+	--dark-color-light: #8a8a8a;
+	--dark-color-lighten: #27302c;
+	--white-color: #1d2521;
+	--dark-blue: #069c54;
+	--text-dark: #f2f2f2;
+}
+
+body {
+	/* margin: var(--header-height) 0 0 0; */
+	margin: 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-medium);
+	color: var(--dark-color);
+	line-height: 1.6;
+	background-color: var(--white-color);
+}
+
+textarea {
+	font-family: var(--body-font) !important;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--dark-color);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+nav {
+	height: 81px;
+	background-color: #ffffff;
+	position: sticky;
+	border-bottom: 1px solid #e6e8ef;
+}
+
+/* ============  COMMON ================ */
+
+.container {
+	padding: 0 10vw;
+}
+
+.display-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.section-heading {
+	font-size: 4.4em;
+	line-height: 1em;
+	letter-spacing: -4px;
+}
+
+.section-p {
+	color: var(--dark-color-light);
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.43;
+}
+
+.button {
+	height: 55px;
+	width: 180px;
+	background-color: var(--primary);
+	align-items: center;
+	border: none;
+	color: var(--white-color);
+	justify-content: center;
+	display: flex;
+	outline: none;
+	font-size: 17px;
+	font-family: var(--font-medium);
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.button i {
+	margin-left: 5px;
+	transition: 0.3s ease-in-out;
+	font-size: 22px;
+}
+
+.button:hover i {
+	margin-left: 10px;
+}
+
+.title-div {
+	text-align: center;
+	flex-direction: column;
+	padding: 0 25vw;
+	align-self: center;
+	margin: 6vh 0;
+}
+
+.title-div h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--secondary);
+}
+
+.title-div .underline {
+	width: 100px;
+	height: 4px;
+	background-color: var(--primary);
+	margin: 10px 0;
+	color: var(--primary);
+}
+
+.title-div p,
+.item p {
+	color: var(--dark-color-light);
+	font-weight: 400 !important;
+	text-align: center;
+}
+
+/* ----------- ITEM ------------- */
+.item-div {
+	gap: 30px;
+}
+.item {
+	flex-direction: column;
+	gap: 10px;
+}
+
+.item .image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: red; */
+	width: 100%;
+}
+
+.item .image-bg {
+	width: 100%;
+	height: 350px;
+	background-image: url("https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=730&q=80");
+}
+
+.image-description {
+	color: var(--dark-color-light);
+	font-weight: normal;
+}
+
+.item .image i {
+	font-size: 50px;
+	color: var(--secondary);
+}
+
+.item .image span {
+	font-size: 15px;
+	color: var(--secondary);
+}
+
+/* ========== NAVIGATION BAR ======================
+*/
+
+.logo-icon {
+	height: 30px;
+	background-image: url("https://heyfood.africa/icons/new/logo-long.svg");
+	width: 140px;
+	background-repeat: no-repeat;
+	/* background-image: url("https://www.vubavuba.rw/assets/img/vubalogo.png"); */
+}
+
+.nav-links ul li {
+	margin: 0 30px 0 0;
+	font-size: 18px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown .dd {
+	display: none;
+}
+
+.dropdown:hover .dd {
+	display: unset;
+}
+
+.dropdown .dd {
+	position: absolute;
+	background-color: var(--white-color);
+	width: 220px;
+	right: 0;
+	border-radius: 10px;
+	padding: 15px;
+	top: calc(30px + 5px);
+	box-shadow: 0px 1px 8px rgba(5, 52, 127, 0.1);
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.dropdown .dd ul li {
+	height: 45px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	border-bottom: 2px solid transparent;
+	transition: 0.3s ease-in-out;
+}
+
+.dropdown .dd ul li:hover {
+	border-bottom: 2px solid var(--green-theme);
+}
+
+/* ----- GUIDE SECTION ----------- */
+.guide-section {
+	background-color: #e4f1ed;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	margin-bottom: 10vh;
+	margin-top: 10vh;
+	gap: 20vh;
+}
+.guide-image {
+	flex: 1;
+	position: relative;
+}
+.guide-image-bg {
+	height: 500px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("https://images.unsplash.com/photo-1681206691902-14878e9c28db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80");
+}
+
+.guide-card {
+	height: 200px;
+	width: 200px;
+	background-color: var(--primary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	justify-content: center;
+	position: absolute;
+	bottom: -20px;
+	left: -30px;
+}
+
+.guide-card h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.guide-content {
+	align-items: flex-start;
+}
+
+.guide-content h1 {
+	text-align: left;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 40px;
+	color: var(--secondary);
+}
+
+.guide-content p {
+	color: var(--dark-color-light);
+	margin-top: 20px;
+}
+
+.guide-content ul {
+	margin-left: 10px;
+	list-style: disc;
+	list-style-position: inside;
+	margin-top: 10px;
+	color: var(--secondary);
+}
+
+.guide-btn {
+	margin-top: 20px;
+	background-color: "transparent" !important;
+}
+
+/* ------- FOOTER -------------- */
+.footer {
+	background-color: #e4f1ed;
+	margin-top: 10vh;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	gap: 20px;
+}
+
+.footer .footer-description {
+	width: 30%;
+}
+
+.footer .footer-description p {
+	margin-top: 10px;
+}
+
+.footer .image {
+	height: 30px;
+	background-image: url("https://heyfood.africa/icons/new/logo-long.svg");
+	width: 140px;
+	background-repeat: no-repeat;
+}
+
+.footer .footer-sub-div {
+}
+
+footer .footer-sub-div h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.footer .footer-form form {
+	margin-top: 20px;
+}

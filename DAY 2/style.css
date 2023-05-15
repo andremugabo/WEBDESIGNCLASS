@@ -1,0 +1,35 @@
+h1{
+
+ background:orange;
+ font-family:verdana self;
+ color:red;
+ text-align:center;
+ font-size:80;
+
+}
+h2{
+	color:white;
+	background-color:black;
+	border:2px solid blue;
+}
+p{
+	color:blue;
+	border: 2px dashed black;
+      padding:10px;
+}
+body{
+	background-color:grey;
+}
+a:link{
+	color:red;
+	background-color:none;
+}
+a:hover{
+	color:yellow;
+	text-decoration:none;
+}
+a:visted{
+	color:red;
+}
+
+	

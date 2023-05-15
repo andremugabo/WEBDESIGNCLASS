@@ -1,0 +1,25 @@
+*{
+    color: blue;
+}
+p.myParaColor{
+    background-color: lightblue;
+    background-image: url("logo.png");
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment:scroll;
+    color: red;
+    height: 550px;
+    text-align: center;
+    font-size: 50px;
+    height: 800px;
+}
+h1.myH1Color{
+    background-color: gray;
+    /* opacity: 0.1; */
+    color: black;
+    text-align:center;
+    font-weight: bold;
+    font-size: 70px;
+	
+}
